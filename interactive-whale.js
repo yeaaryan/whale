@@ -24,7 +24,7 @@ var whale = (function() {
     }
   }
 
-  // --- CRITICAL FIX #1: ADD THE MISSING 'transform' FUNCTION ---
+  // CRITICAL FIX: ADD THE MISSING 'transform' FUNCTION
   function transform(params) {
     var dx = (params.mouse.x - params.part.x) / easy;
     var dy = (params.mouse.y - params.part.y) / easy;
@@ -41,7 +41,7 @@ var whale = (function() {
     params.part.x += dx;
     params.part.y += dy;
   }
-  // -------------------------------------------------------------
+  // --------------------------------------------------
 
   var svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
   svg.setAttribute("width", "100%");
